@@ -5,11 +5,13 @@ import { Form2 } from "./waveMotion/components/Form2.js";
 import { ElectronMotionGenerator } from "./electronMotion/components/ElectronMotionGenerator.js";
 import { Form3 } from "./electronMotion/components/Form3.js";
 import "../src/stylesheets/app.css";
+import { MainAbout } from "./main/components/MainAbout.js";
 
 function App() {
   return (
     <>
       <NavbarMain />
+      <MainAbout />
       {/*  */}
       <WaveMotionGenerator />
       <Form2 />

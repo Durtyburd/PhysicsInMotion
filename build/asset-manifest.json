@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/PhysicsInMotion/static/css/main.64732e31.css",
-    "main.js": "/PhysicsInMotion/static/js/main.9dd6750e.js",
+    "main.css": "/PhysicsInMotion/static/css/main.dbc5f3a8.css",
+    "main.js": "/PhysicsInMotion/static/js/main.5eda2de4.js",
     "static/media/logo.png": "/PhysicsInMotion/static/media/logo.d18f8687df1bfb2959fc.png",
     "index.html": "/PhysicsInMotion/index.html",
-    "main.64732e31.css.map": "/PhysicsInMotion/static/css/main.64732e31.css.map",
-    "main.9dd6750e.js.map": "/PhysicsInMotion/static/js/main.9dd6750e.js.map"
+    "main.dbc5f3a8.css.map": "/PhysicsInMotion/static/css/main.dbc5f3a8.css.map",
+    "main.5eda2de4.js.map": "/PhysicsInMotion/static/js/main.5eda2de4.js.map"
   },
   "entrypoints": [
-    "static/css/main.64732e31.css",
-    "static/js/main.9dd6750e.js"
+    "static/css/main.dbc5f3a8.css",
+    "static/js/main.5eda2de4.js"
   ]
 }

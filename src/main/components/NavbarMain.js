@@ -36,7 +36,7 @@ function NavbarMain(props) {
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText>
               <Typography variant="h5">
-                <a href="https://github.com/Durtyburd/Schrodinger_Equation/tree/master">
+                <a href="https://github.com/Durtyburd/PhysicsInMotion">
                   GitHub
                 </a>
               </Typography>
@@ -70,7 +70,7 @@ function NavbarMain(props) {
             <img src={logo} alt="Schrodingers Equation" />
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <a href="https://github.com/Durtyburd/Schrodinger_Equation/tree/master">
+            <a href="https://github.com/Durtyburd/PhysicsInMotion">
               {" "}
               <Button sx={{ color: "black", textTransform: "none" }}>
                 <Typography variant="h5">GitHub</Typography>

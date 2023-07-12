@@ -5,13 +5,33 @@ function WaveMotionGenerator() {
   return (
     <>
       <Box align="center" padding="7% 0 3% 0" backgroundColor="#ededeb">
-        <Typography className="heading" variant="h3" padding="0% 0% 2% 0%">
+        <Typography
+          className="heading"
+          variant="h3"
+          padding="0% 0% 2% 0%"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 3% 0 3%",
+              fontSize: "2.5rem",
+            },
+          }}
+        >
           <strong>
-            1D Wave <br />
-            Function
+            Wave Motion
+            <br />
+            Generator
           </strong>
         </Typography>
-        <Typography variant="h4">
+        <Typography
+          className="wave-motion"
+          variant="h4"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 3% 10% 3%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
           A 1D visual representation solved by the <br />
           FDTD (finite-difference time-domain) method.
         </Typography>

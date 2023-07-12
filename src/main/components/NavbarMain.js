@@ -13,7 +13,7 @@ import {
   Button,
   Typography,
 } from "@mui/material";
-
+import { scroller } from "react-scroll";
 import logo from "../../images/logo.png";
 
 const drawerWidth = 240;
@@ -33,18 +33,16 @@ function NavbarMain(props) {
       <Divider />
       <List>
         <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText>
-              <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
-                <a href="https://github.com/Durtyburd/PhysicsInMotion">
-                  GitHub
-                </a>
-              </Typography>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton
+            onClick={() =>
+              scroller.scrollTo("particle-motion", {
+                smooth: true,
+                offset: -400,
+                duration: 500,
+              })
+            }
+            sx={{ textAlign: "center" }}
+          >
             <ListItemText>
               <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
                 Particle Motion
@@ -53,7 +51,16 @@ function NavbarMain(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton
+            onClick={() =>
+              scroller.scrollTo("wave-motion", {
+                smooth: true,
+                offset: -400,
+                duration: 500,
+              })
+            }
+            sx={{ textAlign: "center" }}
+          >
             <ListItemText>
               <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
                 Wave Motion
@@ -62,10 +69,30 @@ function NavbarMain(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton
+            onClick={() =>
+              scroller.scrollTo("electron-motion", {
+                smooth: true,
+                offset: -400,
+                duration: 500,
+              })
+            }
+            sx={{ textAlign: "center" }}
+          >
             <ListItemText>
               <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
                 Electron Motion
+              </Typography>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText>
+              <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
+                <a href="https://github.com/Durtyburd/PhysicsInMotion">
+                  GitHub
+                </a>
               </Typography>
             </ListItemText>
           </ListItemButton>
@@ -79,7 +106,7 @@ function NavbarMain(props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav" position="sticky">
+      <AppBar component="nav" position="fixed">
         <Toolbar sx={{ backgroundColor: "#000000" }}>
           <IconButton
             // color="inherit"
@@ -97,13 +124,40 @@ function NavbarMain(props) {
             <img src={logo} alt="Schrodingers Equation" />
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button sx={{ color: "white", textTransform: "none" }}>
+            <Button
+              onClick={() =>
+                scroller.scrollTo("particle-motion", {
+                  smooth: true,
+                  offset: -400,
+                  duration: 500,
+                })
+              }
+              sx={{ color: "white", textTransform: "none" }}
+            >
               <Typography variant="h5">Particle Motion</Typography>
             </Button>{" "}
-            <Button sx={{ color: "white", textTransform: "none" }}>
+            <Button
+              onClick={() =>
+                scroller.scrollTo("wave-motion", {
+                  smooth: true,
+                  offset: -400,
+                  duration: 500,
+                })
+              }
+              sx={{ color: "white", textTransform: "none" }}
+            >
               <Typography variant="h5">Wave Motion</Typography>
             </Button>{" "}
-            <Button sx={{ color: "white", textTransform: "none" }}>
+            <Button
+              onClick={() =>
+                scroller.scrollTo("electron-motion", {
+                  smooth: true,
+                  offset: -400,
+                  duration: 500,
+                })
+              }
+              sx={{ color: "white", textTransform: "none" }}
+            >
               <Typography variant="h5">Electron Motion</Typography>
             </Button>{" "}
             <a href="https://github.com/Durtyburd/PhysicsInMotion">

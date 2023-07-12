@@ -5,13 +5,33 @@ function ElectronMotionGenerator() {
   return (
     <div style={{ backgroundColor: "white" }}>
       <Box align="center" padding="7% 0 3% 0" backgroundColor="white">
-        <Typography className="heading" variant="h3" padding="0% 0% 2% 0%">
+        <Typography
+          className="heading"
+          variant="h3"
+          padding="0% 0% 2% 0%"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "18% 3% 0 3%",
+              fontSize: "2.5rem",
+            },
+          }}
+        >
           <strong>
             The Schrödinger <br />
             Equation
           </strong>
         </Typography>
-        <Typography variant="h4" padding="0% 0% 2% 0%">
+        <Typography
+          className="electron-motion"
+          variant="h4"
+          padding="0% 0% 2% 0%"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 3% 10% 3%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
           A 1D visual representation solved by the <br />
           FDTD (finite-difference time-domain) method.
         </Typography>

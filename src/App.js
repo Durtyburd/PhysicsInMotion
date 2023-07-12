@@ -6,12 +6,15 @@ import { ElectronMotionGenerator } from "./electronMotion/components/ElectronMot
 import { Form3 } from "./electronMotion/components/Form3.js";
 import "../src/stylesheets/app.css";
 import { MainAbout } from "./main/components/MainAbout.js";
+import { ParticleMotionGenerator } from "./particleMotion/components/ParticleMotionGenerator.js.js";
 
 function App() {
   return (
     <>
       <NavbarMain />
       <MainAbout />
+      {/*  */}
+      <ParticleMotionGenerator />
       {/*  */}
       <WaveMotionGenerator />
       <Form2 />

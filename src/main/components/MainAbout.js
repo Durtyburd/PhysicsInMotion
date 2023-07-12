@@ -31,7 +31,7 @@ function MainAbout() {
         <strong>
           Interactive 1D Particle, Wave, <br />
           and Electron Motion
-          <br /> Visualizations Function
+          <br /> Visualizations
         </strong>
       </Typography>
       <Typography

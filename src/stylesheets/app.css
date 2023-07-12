@@ -1,41 +1,10 @@
+/* CSS for global tags */
 * {
   margin: 0;
   border: 0;
   letter-spacing: 0.1em;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration-line: none;
-}
-
-.about-title {
-  padding: 5% 5% 5% 5%;
-  text-align: center;
-  font-size: 3rem;
-}
-
-.about-body {
-  text-align: center;
-  padding: 0% 5% 10% 5%;
-  font-weight: lighter;
-}
-
-.footer-h3 {
-  color: black;
-  padding: 1% 0;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .footer-h3 {
-    padding: 7% 0 7%;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-h3 {
-    padding: 7% 0 7%;
-    font-size: 16px;
-  }
 }
 
 button {
@@ -54,4 +23,42 @@ button {
 button:hover {
   background: #159895;
   text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+/* CSS for about */
+.about-title {
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.about-body {
+  text-align: center;
+  padding: 0% 5% 10% 5%;
+  font-weight: lighter;
+}
+
+/* CSS for Footer */
+.footer-h3 {
+  color: black;
+  padding: 1% 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-h3 {
+    padding: 7% 0 7%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-h3 {
+    padding: 7% 0 7%;
+    font-size: 16px;
+  }
 }

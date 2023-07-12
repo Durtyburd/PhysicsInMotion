@@ -44,7 +44,7 @@ class initVariables {
       this.psigauss.push(indexVal);
       this.psir[i] = this.psigauss[i] * cos(this.k0 * this.lx[i]);
       this.psii[i] = this.psigauss[i] * sin(this.k0 * this.lx[i]);
-      this.psimag[i] = this.psir[i] ** 2 + this.psii[i] ** 2;
+      this.psimag[i] = Math.pow(this.psir[i], 2) + Math.pow(this.psii[i], 2);
     }
 
     // fdtd update coefficients

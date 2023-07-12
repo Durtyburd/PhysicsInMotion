@@ -85,12 +85,12 @@ function ThirdChart({ q1 }) {
         title: "Ψ",
         range: [-1, 1],
         tickcolor: "black",
-        zerolinecolor: "#ededeb",
+        zerolinecolor: "#ffffff",
         color: "black",
         automargin: true,
       },
-      plot_bgcolor: "#ededeb",
-      paper_bgcolor: "#ededeb",
+      plot_bgcolor: "#ffffff",
+      paper_bgcolor: "#ffffff",
     };
 
     // Create the final graph

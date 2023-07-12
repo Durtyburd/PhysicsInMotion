@@ -61,13 +61,8 @@ function Form2() {
 
   return (
     <>
-      <div>
-        <Box
-          align="center"
-          padding="0 5% 0 5%"
-          backgroundColor="#ededeb"
-          z-index="99"
-        >
+      <div style={{ backgroundColor: "#ededeb" }}>
+        <Box align="center" padding="0 5% 0 5%">
           <Typography variant="h4" padding="0% 0% 2% 0%">
             Please choose a wave that you would like to see simulated.
           </Typography>
@@ -88,7 +83,7 @@ function Form2() {
           </button>
         </Box>
       </div>
-      <div style={{ marginTop: "1%" }}>
+      <div style={{ paddingTop: "1%", backgroundColor: "#ededeb" }}>
         <h2 align="center">Create your own wave</h2>
         <form
           display="flex"

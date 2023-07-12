@@ -4,13 +4,8 @@ import { Box, Typography } from "@mui/material";
 function WaveMotionGenerator() {
   return (
     <>
-      <Box
-        align="center"
-        padding="7% 0 3% 0"
-        backgroundColor="#ededeb"
-        z-index="99"
-      >
-        <Typography className="heading" variant="h2" padding="0% 0% 2% 0%">
+      <Box align="center" padding="7% 0 3% 0" backgroundColor="#ededeb">
+        <Typography className="heading" variant="h3" padding="0% 0% 2% 0%">
           <strong>
             1D Wave <br />
             Function

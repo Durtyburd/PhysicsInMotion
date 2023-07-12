@@ -6,7 +6,7 @@ function MainAbout() {
   return (
     <Box
       align="center"
-      padding="15% 0 15% 0"
+      padding="22% 0 22% 0"
       backgroundColor="#97FEED"
       color="#FFFFFF"
       sx={{
@@ -14,13 +14,13 @@ function MainAbout() {
         backgroundSize: "cover",
       }}
     >
-      <Typography className="heading" variant="h1" padding="0% 0% 10% 0%">
+      <Typography variant="h2" padding="0% 0% 5% 0%">
         <strong>
           1D Wave <br />
           Function
         </strong>
       </Typography>
-      <Typography variant="h4">
+      <Typography variant="h6">
         A 1D visual representation solved by the <br />
         FDTD (finite-difference time-domain) method.
       </Typography>

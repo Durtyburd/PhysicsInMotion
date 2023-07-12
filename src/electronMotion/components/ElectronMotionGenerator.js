@@ -3,14 +3,9 @@ import { Box, Typography } from "@mui/material";
 
 function ElectronMotionGenerator() {
   return (
-    <>
-      <Box
-        align="center"
-        padding="7% 0 3% 0"
-        backgroundColor="#ededeb"
-        z-index="99"
-      >
-        <Typography className="heading" variant="h2" padding="0% 0% 2% 0%">
+    <div style={{ backgroundColor: "white" }}>
+      <Box align="center" padding="7% 0 3% 0" backgroundColor="white">
+        <Typography className="heading" variant="h3" padding="0% 0% 2% 0%">
           <strong>
             The Schrödinger <br />
             Equation
@@ -31,7 +26,7 @@ function ElectronMotionGenerator() {
         </Typography>
         <br />
       </Box>
-    </>
+    </div>
   );
 }
 

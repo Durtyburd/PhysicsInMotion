@@ -35,10 +35,37 @@ function NavbarMain(props) {
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText>
-              <Typography variant="h5">
+              <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
                 <a href="https://github.com/Durtyburd/PhysicsInMotion">
                   GitHub
                 </a>
+              </Typography>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText>
+              <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
+                Particle Motion
+              </Typography>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText>
+              <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
+                Wave Motion
+              </Typography>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText>
+              <Typography variant="h5" sx={{ color: "#FFFFFF" }}>
+                Electron Motion
               </Typography>
             </ListItemText>
           </ListItemButton>
@@ -53,13 +80,13 @@ function NavbarMain(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBar component="nav" position="sticky">
-        <Toolbar sx={{ backgroundColor: "#35A29F" }}>
+        <Toolbar sx={{ backgroundColor: "#000000" }}>
           <IconButton
             // color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
           >
             <span className="material-symbols-outlined">menu</span>
           </IconButton>
@@ -70,9 +97,17 @@ function NavbarMain(props) {
             <img src={logo} alt="Schrodingers Equation" />
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Button sx={{ color: "white", textTransform: "none" }}>
+              <Typography variant="h5">Particle Motion</Typography>
+            </Button>{" "}
+            <Button sx={{ color: "white", textTransform: "none" }}>
+              <Typography variant="h5">Wave Motion</Typography>
+            </Button>{" "}
+            <Button sx={{ color: "white", textTransform: "none" }}>
+              <Typography variant="h5">Electron Motion</Typography>
+            </Button>{" "}
             <a href="https://github.com/Durtyburd/PhysicsInMotion">
-              {" "}
-              <Button sx={{ color: "black", textTransform: "none" }}>
+              <Button sx={{ color: "white", textTransform: "none" }}>
                 <Typography variant="h5">GitHub</Typography>
               </Button>
             </a>
@@ -93,7 +128,7 @@ function NavbarMain(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backgroundColor: "#35A29F",
+              backgroundColor: "#000000",
             },
           }}
         >

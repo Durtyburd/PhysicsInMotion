@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PhysicsInMotion/static/css/main.59713e3b.css",
-    "main.js": "/PhysicsInMotion/static/js/main.b41d5e08.js",
+    "main.css": "/PhysicsInMotion/static/css/main.930e0e8a.css",
+    "main.js": "/PhysicsInMotion/static/js/main.b10f76eb.js",
     "static/media/physics.png": "/PhysicsInMotion/static/media/physics.66006e8d1dce040eb947.png",
-    "static/media/logo.png": "/PhysicsInMotion/static/media/logo.d18f8687df1bfb2959fc.png",
+    "static/media/logo.png": "/PhysicsInMotion/static/media/logo.7c34a16c75d34115d75e.png",
     "index.html": "/PhysicsInMotion/index.html",
-    "main.59713e3b.css.map": "/PhysicsInMotion/static/css/main.59713e3b.css.map",
-    "main.b41d5e08.js.map": "/PhysicsInMotion/static/js/main.b41d5e08.js.map"
+    "main.930e0e8a.css.map": "/PhysicsInMotion/static/css/main.930e0e8a.css.map",
+    "main.b10f76eb.js.map": "/PhysicsInMotion/static/js/main.b10f76eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.59713e3b.css",
-    "static/js/main.b41d5e08.js"
+    "static/css/main.930e0e8a.css",
+    "static/js/main.b10f76eb.js"
   ]
 }

@@ -23,14 +23,10 @@ function SecondChart({ q1 }) {
       q1.fdtdUpdate();
       if (nn % 50 === 0) {
         // Wave // they should only iterate 219 times
-        //   xArr1.push(q1.lx / q1.angstromStar);
-        //   yArr1.push(q1.psimag / getMaxValue(q1.psimag));
         xArr1.push(q1.lx.map((value) => value / q1.angstromStar));
         yArr1.push(q1.psimag.map((value) => value / getMaxValue(q1.psimag)));
 
         // Barrier // they should only iterate 219 times
-        //   xArr2.push(q1.lx[nn] / q1.angstromStar);
-        //   yArr2.push(q1.Vx[nn] / getMaxValue(q1.Vx));
         xArr2.push(q1.lx.map((value) => value / q1.angstromStar));
         yArr2.push(q1.Vx.map((value) => value / getMaxValue(q1.Vx)));
       }
@@ -90,12 +86,12 @@ function SecondChart({ q1 }) {
         title: "normalized magnitude",
         range: [0, 1],
         tickcolor: "black",
-        zerolinecolor: "#ededeb",
+        zerolinecolor: "#ffffff",
         color: "black",
         automargin: true,
       },
-      plot_bgcolor: "#ededeb",
-      paper_bgcolor: "#ededeb",
+      plot_bgcolor: "#ffffff",
+      paper_bgcolor: "#ffffff",
     };
 
     // Create the initial graph

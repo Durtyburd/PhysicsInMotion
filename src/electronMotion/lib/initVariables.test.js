@@ -80,14 +80,14 @@ describe("initVariables", () => {
     expect(result.Vx[result.br - 1]).toBe(expectedNewVx2);
     /////////////////////////////////////////////////////////////
     // not exactly precise, but extremely close //
-    // expect(result.psir[0]).toBe(expectedpsir1);
-    // expect(result.psir[result.psir.length - 1]).toBe(expectedpsir2);
-    // expect(result.psii[0]).toBe(expectedpsii1);
-    // expect(result.psii[result.psii.length - 1]).toBe(expectedpsii2);
-    // expect(result.psimag[0]).toBe(expectedpsimag1);
-    // expect(result.psimag[result.psimag.length - 1]).toBe(expectedpsimag2);
-    // expect(result.psigauss[0]).toBe(expectedpsigauss1);
-    // expect(result.psigauss[result.psigauss - 1]).toBe(expectedpsigauss2);
+    expect(result.psir[0]).toBe(expectedpsir1);
+    expect(result.psir[result.psir.length - 1]).toBe(expectedpsir2);
+    expect(result.psii[0]).toBe(expectedpsii1);
+    expect(result.psii[result.psii.length - 1]).toBe(expectedpsii2);
+    expect(result.psimag[0]).toBe(expectedpsimag1);
+    expect(result.psimag[result.psimag.length - 1]).toBe(expectedpsimag2);
+    expect(result.psigauss[0]).toBe(expectedpsigauss1);
+    expect(result.psigauss[result.psigauss.length - 1]).toBe(expectedpsigauss2);
     //////////////////////////////////////////////////////////////
     expect(result.ac).toBe(expectedac);
     expect(result.x0).toBe(expectedx0);

@@ -5,6 +5,7 @@ import React from "react";
 function Particle() {
   const particlesInit = async (main) => {
     console.log(main);
+    // main.preventDefault();
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -39,7 +40,7 @@ function Particle() {
             random: false,
             anim: {
               enable: false,
-              speed: 5,
+              speed: 7,
               opacity_min: 0.1,
               sync: false,
             },
@@ -73,7 +74,7 @@ function Particle() {
           },
           move: {
             enable: true,
-            speed: 1,
+            speed: 2,
             direction: "none",
             random: false,
             straight: false,

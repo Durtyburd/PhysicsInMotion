@@ -33,6 +33,7 @@ function SecondChart({ q1 }) {
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////
+    console.log(yArr1);
     // frames for animation
     for (let i = 0; i < xArr1.length; i++) {
       firstFrames.push({

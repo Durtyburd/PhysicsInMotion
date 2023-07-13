@@ -57,10 +57,14 @@ class initVariables {
         this.c1 * (this.psir[i + 1] - 2.0 * this.psir[i] + this.psir[i - 1]) -
         this.c2 * this.Vx[i] * this.psir[i] +
         this.psii[i];
+    }
+    for (let i = 1; i < this.ll - 1; i++) {
       this.psir[i] =
         -this.c1 * (this.psii[i + 1] - 2.0 * this.psii[i] + this.psii[i - 1]) +
         this.c2 * this.Vx[i] * this.psii[i] +
         this.psir[i];
+    }
+    for (let i = 1; i < this.ll - 1; i++) {
       this.psimag[i] = this.psir[i] ** 2 + this.psii[i] ** 2;
     }
   }

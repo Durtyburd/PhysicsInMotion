@@ -18,7 +18,7 @@ function Form3() {
   };
 
   return (
-    <div style={{ marginTop: "1%" }}>
+    <div style={{ marginTop: "1%", backgroundColor: "#ededeb" }}>
       <h2 align="center">Create your own wave function</h2>
       <form
         display="flex"

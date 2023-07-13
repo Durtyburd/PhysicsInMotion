@@ -107,7 +107,7 @@ function NavbarMain(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBar component="nav" position="fixed">
-        <Toolbar sx={{ backgroundColor: "#000000" }}>
+        <Toolbar sx={{ backgroundColor: "black" }}>
           <IconButton
             // color="inherit"
             aria-label="open drawer"

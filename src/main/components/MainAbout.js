@@ -16,7 +16,7 @@ function MainAbout() {
         },
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           position: "absolute",
           top: 0,
@@ -33,12 +33,12 @@ function MainAbout() {
             backgroundPosition: "center",
           },
         }}
-      ></Box>
+      ></Box> */}
       <Typography
         variant="h2"
         padding="0% 0% 5% 0%"
         sx={{
-          textShadow: "1px 1px 4px black, 0 0 .3em purple, 0 0 1em cyan",
+          textShadow: "1px 1px 4px black, 0 0 .3em cyan",
           "@media screen and (max-width: 600px)": {
             padding: "18% 3% 0 3%",
             fontSize: "2.5rem",
@@ -54,7 +54,6 @@ function MainAbout() {
       <Typography
         variant="h4"
         sx={{
-          textShadow: "1px 1px 4px black, 0 0 .3em purple, 0 0 1em cyan",
           "@media screen and (max-width: 600px)": {
             padding: "10% 3% 10% 3%",
             fontSize: "1.5rem",

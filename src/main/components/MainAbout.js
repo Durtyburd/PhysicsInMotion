@@ -7,21 +7,38 @@ function MainAbout() {
     <Box
       align="center"
       padding="22% 0 22% 0"
-      backgroundColor="#97FEED"
       color="#FFFFFF"
       sx={{
-        backgroundImage: `url(${physicsPic})`,
-        backgroundSize: "cover",
+        position: "relative",
         "@media screen and (max-width: 600px)": {
           backgroundSize: "cover",
           backgroundPosition: "center",
         },
       }}
     >
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: `url(${physicsPic})`,
+          backgroundSize: "cover",
+          filter: "blur(3px)",
+
+          zIndex: -1,
+          "@media screen and (max-width: 600px)": {
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          },
+        }}
+      ></Box>
       <Typography
         variant="h2"
         padding="0% 0% 5% 0%"
         sx={{
+          textShadow: "1px 1px 4px black, 0 0 .3em purple, 0 0 1em cyan",
           "@media screen and (max-width: 600px)": {
             padding: "18% 3% 0 3%",
             fontSize: "2.5rem",
@@ -37,6 +54,7 @@ function MainAbout() {
       <Typography
         variant="h4"
         sx={{
+          textShadow: "1px 1px 4px black, 0 0 .3em purple, 0 0 1em cyan",
           "@media screen and (max-width: 600px)": {
             padding: "10% 3% 10% 3%",
             fontSize: "1.5rem",

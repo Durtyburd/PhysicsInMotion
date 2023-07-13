@@ -3,10 +3,6 @@ import { getMaxValue } from "../lib/getMaxValue.js";
 import { useEffect } from "react";
 
 function ThirdChart({ q1 }) {
-  function refreshPage() {
-    window.location.reload(false);
-  }
-
   useEffect(() => {
     const trace1xArr = [];
     const trace1yArr = [];
@@ -101,7 +97,6 @@ function ThirdChart({ q1 }) {
   return (
     <>
       <div padding="5% 0 5% 0" id="chart3"></div>
-      <button onClick={refreshPage}>Restart</button>
     </>
   );
 }

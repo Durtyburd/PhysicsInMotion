@@ -40,9 +40,9 @@ function ElectronMotionGenerator() {
           Height of potential barrier: 600 <br />
           potential barrier width: .25
           <br />
-          initial spread: 500
+          kinetic energy: 500
           <br />
-          kinetic energy: .8*
+          initial spread: .8*
         </Typography>
         <br />
       </Box>

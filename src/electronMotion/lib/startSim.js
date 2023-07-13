@@ -1,7 +1,7 @@
 import { round } from "mathjs";
 import { initVariables } from "./initVariables.js";
 
-function startSim(V0_in, bw_in, ke_in, sig_in) {
+function startSim(V0_in, bw_in, sig_in, ke_in) {
   const q1 = new initVariables(V0_in, bw_in, ke_in, sig_in);
   const potentialBarrier = round(q1.V0 / q1.electronVolt, 2);
   const potentialBarrierWidth = round(q1.bw / q1.angstromStar, 2);

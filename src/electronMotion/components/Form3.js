@@ -36,7 +36,7 @@ function Form3() {
             type="text"
             variant="outlined"
             color="primary"
-            label="Height of potential barrier (J)"
+            label="Barrier Height (eV)"
             sx={{ margin: "1% 1% 1% 1%" }}
             onChange={(e) => {
               if (
@@ -57,7 +57,7 @@ function Form3() {
             type="text"
             variant="outlined"
             color="primary"
-            label="Potential barrier width (m)"
+            label="Barrier Width (Å)"
             sx={{ margin: "1% 1% 1% 1%" }}
             onChange={(e) => {
               if (
@@ -86,28 +86,7 @@ function Form3() {
             type="text"
             variant="outlined"
             color="primary"
-            label="Initial spread of Gaussian wavefunction"
-            sx={{ margin: "1% 1% 1% 1%" }}
-            onChange={(e) => {
-              if (
-                (e.target.value > -1 && e.target.value <= 10e13) ||
-                e.target.value === "."
-              ) {
-                setStatesig(e.target.value);
-              } else {
-                alert(
-                  "Please input a value between 0 and 100,000,000,000,000, but not 0."
-                );
-                e.target.value = 1;
-              }
-            }}
-            required
-          />
-          <TextField
-            type="text"
-            variant="outlined"
-            color="primary"
-            label="Kinetic energy of electron (J)"
+            label="Electron Energy (eV)"
             sx={{ margin: "1% 1% 1% 1%" }}
             onChange={(e) => {
               if (
@@ -120,6 +99,27 @@ function Form3() {
                   "Please input a value between 0 and 100,000,000,000,000, but not 0."
                 );
                 e.target.value = 0.1;
+              }
+            }}
+            required
+          />
+          <TextField
+            type="text"
+            variant="outlined"
+            color="primary"
+            label="Wavefunction Spread (Å)"
+            sx={{ margin: "1% 1% 1% 1%" }}
+            onChange={(e) => {
+              if (
+                (e.target.value > -1 && e.target.value <= 10e13) ||
+                e.target.value === "."
+              ) {
+                setStatesig(e.target.value);
+              } else {
+                alert(
+                  "Please input a value between 0 and 100,000,000,000,000, but not 0."
+                );
+                e.target.value = 1;
               }
             }}
             required

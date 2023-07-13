@@ -38,10 +38,10 @@ class initVariables {
     this.ac = 1.0 / sqrt(sqrt(Math.PI) * this.sig);
     this.x0 = this.bl * this.dx - 6 * this.sig;
     this.psigauss = [];
-    for (let i = 0; i < this.lx.length; i++) {
-      const indexVal =
-        this.ac * exp(-pow(this.lx[i] - this.x0, 2) / (2.0 * this.sig ** 2)); // CHECK BACK ON THIS
-      this.psigauss.push(indexVal);
+    for (let i = 0; i < this.ll; i++) {
+      this.psigauss.push(
+        this.ac * exp(-pow(this.lx[i] - this.x0, 2) / (2.0 * this.sig ** 2))
+      );
       this.psir[i] = this.psigauss[i] * cos(this.k0 * this.lx[i]);
       this.psii[i] = this.psigauss[i] * sin(this.k0 * this.lx[i]);
       this.psimag[i] = Math.pow(this.psir[i], 2) + Math.pow(this.psii[i], 2);
@@ -63,7 +63,6 @@ class initVariables {
         this.psir[i];
       this.psimag[i] = this.psir[i] ** 2 + this.psii[i] ** 2;
     }
-    // console.log(this.psii);
   }
 }
 

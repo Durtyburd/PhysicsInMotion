@@ -55,6 +55,8 @@ function MainAbout() {
           sx={{
             animation: "fadeIn 12s",
             lineHeight: "2em",
+            textShadow: "1px 1px 4px black, 0 0 .3em blue",
+
             "@media screen and (max-width: 600px)": {
               padding: "10% 3% 10% 3%",
               fontSize: "1.5rem",
@@ -71,6 +73,7 @@ function MainAbout() {
       <Box
         align="left"
         padding="2% 0 2% 0"
+        margin="0 5% 0 5%"
         color="white"
         sx={{
           backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
@@ -81,9 +84,10 @@ function MainAbout() {
         <Typography
           variant="h4"
           sx={{
-            animation: "fadeIn 15s",
             lineHeight: "2em",
             padding: "2% 10% 2% 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em blue",
+
             "@media screen and (max-width: 600px)": {
               padding: "10% 5% 10% 5%",
               fontSize: "1.5rem",

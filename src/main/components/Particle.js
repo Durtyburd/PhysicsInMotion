@@ -4,8 +4,6 @@ import React from "react";
 
 function Particle() {
   const particlesInit = async (main) => {
-    console.log(main);
-    // main.preventDefault();
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -23,14 +21,14 @@ function Particle() {
         },
         particles: {
           number: {
-            value: 15,
+            value: 8,
             density: {
               enable: false,
               value_area: 800,
             },
           },
           color: {
-            value: "#a00fbd",
+            value: "#ffffff",
           },
           shape: {
             type: "circle",
@@ -68,7 +66,7 @@ function Particle() {
           line_linked: {
             enable: true,
             distance: 500,
-            color: "#a00fbd",
+            color: "#ffffff",
             opacity: 0.4,
             width: 2,
           },

@@ -4,14 +4,19 @@ import { Box, Typography } from "@mui/material";
 function ParticleMotionGenerator() {
   return (
     <>
-      <Box align="center" padding="7% 0 3% 0" backgroundColor="#ededeb">
+      <Box
+        align="center"
+        padding="3% 0 3% 0"
+        margin="10% 0 0 0"
+        backgroundColor="#ffffff"
+      >
         <Typography
           className="heading"
           variant="h3"
           padding="0% 0% 2% 0%"
           sx={{
             "@media screen and (max-width: 600px)": {
-              padding: "18% 3% 0 3%",
+              padding: "3% 3% 0 3%",
               fontSize: "2.5rem",
             },
           }}

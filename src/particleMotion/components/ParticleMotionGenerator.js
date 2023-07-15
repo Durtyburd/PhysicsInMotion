@@ -55,10 +55,10 @@ function ParticleMotionGenerator() {
           variant="h4"
           sx={{
             lineHeight: "2em",
-            padding: "2% 10% 2% 10%",
-            textShadow: "1px 1px 4px black, 0 0 .3em blue",
+            padding: "2% 10% 0 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
             "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 10% 5%",
+              padding: "10% 5% 0 5%",
               fontSize: "1.5rem",
             },
           }}
@@ -67,11 +67,33 @@ function ParticleMotionGenerator() {
           involves understanding concepts like position, velocity, and
           acceleration. By studying particle motion, we can predict and analyze
           how things move and learn more about the world around us.
-          <br />
-          <br />
+        </Typography>
+        <Typography
+          variant="h3"
+          sx={{
+            lineHeight: "2em",
+            padding: "2% 10% 0 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em red",
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 5% 0% 5%",
+              fontSize: "2rem",
+            },
+          }}
+        >
           Examples Include:
-          <br />
-          <br />
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            lineHeight: "2em",
+            padding: "0 10% 2% 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em blue",
+            "@media screen and (max-width: 600px)": {
+              padding: "1% 5% 10% 5%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
           Dropping an Object: When you drop an object, it falls towards the
           ground due to gravity. As it falls, it speeds up.
           <br />

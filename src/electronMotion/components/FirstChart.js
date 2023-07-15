@@ -116,7 +116,10 @@ function FirstChart({ q1 }) {
           *NOTE: Once you press the button it may take a few seconds for the
           next chart to render.*
         </Typography>
-        <button onClick={handleSubmit}>Generate</button>
+        <button onClick={handleSubmit}>
+          Generate Schrödinger Equation Solution
+        </button>
+
         {isButtonClicked && <SecondChart q1={q1} />}
       </Box>
     </>

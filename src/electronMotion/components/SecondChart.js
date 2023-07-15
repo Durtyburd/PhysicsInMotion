@@ -115,7 +115,7 @@ function SecondChart({ q1 }) {
   return (
     <>
       <div padding="5% 0 5% 0" id="chart2"></div>
-      <button onClick={handleSubmit}>Generate</button>
+      <button onClick={handleSubmit}>Generate Final Wave Function</button>
       {isButtonClicked && <ThirdChart q1={q1} />}
     </>
   );

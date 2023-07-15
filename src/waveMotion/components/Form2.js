@@ -61,7 +61,13 @@ function Form2() {
 
   return (
     <>
-      <div style={{ backgroundColor: "#ededeb" }}>
+      <div
+        style={{
+          backgroundColor: "#ededeb",
+          margin: "0 5% 0 5%",
+          paddingBottom: "2%",
+        }}
+      >
         <Box align="center" padding="0 5% 0 5%">
           <Typography variant="h4" padding="0% 0% 2% 0%">
             Please choose a wave that you would like to see simulated.
@@ -83,7 +89,13 @@ function Form2() {
           </button>
         </Box>
       </div>
-      <div style={{ paddingTop: "1%", backgroundColor: "#ededeb" }}>
+      <div
+        style={{
+          margin: "0 5% 0 5%",
+          paddingTop: "1%",
+          backgroundColor: "#ededeb",
+        }}
+      >
         <h2 align="center">Create your own wave</h2>
         <form
           display="flex"
@@ -105,13 +117,13 @@ function Form2() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value > -1 && e.target.value <= 10e13) ||
+                  (e.target.value > 100 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStateC(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 1 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 100 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -126,13 +138,13 @@ function Form2() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value > -1 && e.target.value <= 10e13) ||
+                  (e.target.value > 100 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStateCW(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 0 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 100 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -155,13 +167,13 @@ function Form2() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value > -1 && e.target.value <= 10e13) ||
+                  (e.target.value > 100 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStatef0(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 0 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 100 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -218,6 +230,67 @@ function Form2() {
           />
         )}
       </div>
+      <Box
+        align="left"
+        padding="2% 0 2% 0"
+        margin="0 5% 10% 5%"
+        color="white"
+        sx={{
+          backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
+          position: "relative",
+          "@media screen and (max-width: 600px)": {},
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            lineHeight: "2em",
+            padding: "2% 10% 2% 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 5% 10% 5%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
+          Wave motion is when disturbances or energy travel through a medium or
+          space. Waves can be seen in different forms, like sound or water
+          waves. By studying waves, we learn about their properties and how they
+          behave, which is important in areas like communication and optics.
+        </Typography>
+        <Typography
+          variant="h3"
+          sx={{
+            lineHeight: "2em",
+            padding: "2% 10% 0 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em red",
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 5% 0 5%",
+              fontSize: "2rem",
+            },
+          }}
+        >
+          So what are you seeing in the chart?
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            lineHeight: "2em",
+            padding: "0 10% 2% 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em blue",
+            "@media screen and (max-width: 600px)": {
+              padding: "1% 5% 10% 5%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
+          Well, if you clicked the light or sound button. You are essentially
+          rendering a visual representation of that wave. Then showing how fast
+          that wave moves through a medium and how it reflects when changing
+          mediums. Lastly, the x-axis represents time steps and y-axis
+          represents the spacial points.
+        </Typography>
+      </Box>
     </>
   );
 }

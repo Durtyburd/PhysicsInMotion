@@ -5,7 +5,7 @@ import { getMaxValue } from "../lib/getMaxValue.js";
 import { scroller } from "react-scroll";
 
 ///////////////////////////////////////////////////////////////////////////////////////
-function SecondChart({ q1 }) {
+function SecondChart({ q1, finalFrames, xArr2, yArr2 }) {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const handleSubmit = (e) => {
@@ -14,41 +14,6 @@ function SecondChart({ q1 }) {
   };
 
   useEffect(() => {
-    const xArr1 = [];
-    const yArr1 = [];
-    const xArr2 = [];
-    const yArr2 = [];
-    const firstFrames = [];
-
-    for (let nn = 0; nn < q1.tt; nn++) {
-      q1.fdtdUpdate();
-      if (nn % 50 === 0) {
-        // Wave // they should only iterate 219 times
-        xArr1.push(q1.lx.map((value) => value / q1.angstromStar));
-        yArr1.push(q1.psimag.map((value) => value / getMaxValue(q1.psimag)));
-
-        // Barrier // they should only iterate 219 times
-        xArr2.push(q1.lx.map((value) => value / q1.angstromStar));
-        yArr2.push(q1.Vx.map((value) => value / getMaxValue(q1.Vx)));
-      }
-    }
-
-    ///////////////////////////////////////////////////////////////////////////////////////////
-    console.log(yArr1);
-    // frames for animation
-    for (let i = 0; i < xArr1.length; i++) {
-      firstFrames.push({
-        data: [
-          {
-            x: [...xArr1[i]],
-            y: [...yArr1[i]],
-          },
-        ],
-      });
-    }
-    const finalFrames = [...firstFrames];
-    // console.log(finalFrames);
-
     // traces for fixed lines
     const trace1 = {
       x: [],

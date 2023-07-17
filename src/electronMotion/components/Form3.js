@@ -11,11 +11,22 @@ function Form3() {
   const [statesig, setStatesig] = useState(0);
   const [stateke, setStateke] = useState(0);
   const [chartData, setChartData] = useState(null);
+  const [finalFramesData, setFinalFramesData] = useState(null);
+  const [xArr2Data, setXArr2Data] = useState(null);
+  const [yArr2Data, setYArr2Data] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const q1 = handleClick(stateV0, statebw, statesig, stateke);
+    const { q1, xArr2, yArr2, finalFrames } = handleClick(
+      stateV0,
+      statebw,
+      statesig,
+      stateke
+    );
     setChartData(q1);
+    setFinalFramesData(finalFrames);
+    setXArr2Data(xArr2);
+    setYArr2Data(yArr2);
   };
 
   return (
@@ -132,7 +143,7 @@ function Form3() {
               required
             />
           </Box>
-          <Box align="center" padding="0 0 5% 0 ">
+          <Box align="center" padding="0 0 2% 0 ">
             <button
               onClick={() =>
                 scroller.scrollTo("electron-motion-first-chart", {
@@ -152,9 +163,22 @@ function Form3() {
               Generate Initial Wave Function
             </button>
           </Box>
+          <Box align="center">
+            <Typography sx={{ paddingBottom: "2%", alignSelf: "center" }}>
+              *NOTE: Once you press the button it may take a few seconds for the
+              next chart to render.*
+            </Typography>
+          </Box>
         </form>
         <div className="electron-motion-first-chart"></div>
-        {chartData && <FirstChart q1={chartData} />}
+        {chartData && (
+          <FirstChart
+            q1={chartData}
+            finalFrames={finalFramesData}
+            xArr2={xArr2Data}
+            yArr2={yArr2Data}
+          />
+        )}
       </div>
       <Box
         align="left"

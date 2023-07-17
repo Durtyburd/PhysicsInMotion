@@ -5,7 +5,7 @@ import { getMaxValue } from "../lib/getMaxValue.js";
 import { Box, Typography } from "@mui/material";
 import { scroller } from "react-scroll";
 
-function FirstChart({ q1 }) {
+function FirstChart({ q1, finalFrames, xArr2, yArr2 }) {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const handleSubmit = (e) => {
@@ -107,18 +107,13 @@ function FirstChart({ q1 }) {
 
     // Renders next graph immediately
     // secondChart(q1);
-  }, [q1]);
+  }, [q1, finalFrames, xArr2, yArr2]);
 
   return (
     <>
       <div id="chart1"></div>
-      <Box align="center" padding="5% 0 0">
-        <Typography sx={{ paddingBottom: "2%", alignSelf: "center" }}>
-          *NOTE: Once you press the button it may take a few seconds for the
-          next chart to render.*
-        </Typography>
-      </Box>
-      <Box align="center" padding="0 0 5% 0">
+
+      <Box align="center" padding="5% 0 5% 0">
         <button
           onClick={(e) =>
             scroller.scrollTo(
@@ -137,7 +132,14 @@ function FirstChart({ q1 }) {
 
         <div className="electron-motion-second-chart"></div>
 
-        {isButtonClicked && <SecondChart q1={q1} />}
+        {isButtonClicked && (
+          <SecondChart
+            q1={q1}
+            finalFrames={finalFrames}
+            xArr2={xArr2}
+            yArr2={yArr2}
+          />
+        )}
       </Box>
     </>
   );

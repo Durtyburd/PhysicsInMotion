@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
-import { TextField, Box, Typography } from "@mui/material";
+import { TextField, Box, Typography, Divider } from "@mui/material";
 import { handleClick } from "../lib/handleClick.js";
 import { WaveMotionFirstChart } from "./WaveMotionFirstChart.js";
+import { scroller } from "react-scroll";
 
 function Form2() {
   // State for user-inputted wave variables
@@ -72,10 +73,14 @@ function Form2() {
           <Typography variant="h4" padding="0% 0% 2% 0%">
             Please choose a wave that you would like to see simulated.
           </Typography>
-          <br />
           <button
             onClick={(e) => {
               handleSubmit(e, "l");
+              scroller.scrollTo("wave-motion-chart", {
+                smooth: true,
+                offset: -400,
+                duration: 500,
+              });
             }}
           >
             Light
@@ -83,10 +88,25 @@ function Form2() {
           <button
             onClick={(e) => {
               handleSubmit(e, "s");
+              scroller.scrollTo("wave-motion-chart", {
+                smooth: true,
+                offset: -400,
+                duration: 500,
+              });
             }}
           >
             Sound
           </button>
+          <Divider sx={{ marginTop: "4%" }} />
+          <Typography ref={ref} sx={{ paddingBottom: "2%", marginTop: "5%" }}>
+            Speed in air: m/s
+            <br />
+            Speed in water: m/s
+            <br />
+            Frequency of source: Hz
+            <br />
+            Source amplitude: m
+          </Typography>
         </Box>
       </div>
       <div
@@ -116,14 +136,11 @@ function Form2() {
               label="Speed in air - m/s"
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
-                if (
-                  (e.target.value > 100 && e.target.value <= 10000) ||
-                  e.target.value === "."
-                ) {
+                if (e.target.value >= 0 && e.target.value <= 10000) {
                   setStateC(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 100 and 10,000, but not 0."
+                    "Please input a value between 1 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -137,14 +154,11 @@ function Form2() {
               label="Speed in water - m/s"
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
-                if (
-                  (e.target.value > 100 && e.target.value <= 10000) ||
-                  e.target.value === "."
-                ) {
+                if (e.target.value >= 0 && e.target.value <= 10000) {
                   setStateCW(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 100 and 10,000, but not 0."
+                    "Please input a value between 1 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -166,14 +180,11 @@ function Form2() {
               label="Frequency of source - Hz"
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
-                if (
-                  (e.target.value > 100 && e.target.value <= 10000) ||
-                  e.target.value === "."
-                ) {
+                if (e.target.value >= 0 && e.target.value <= 10000) {
                   setStatef0(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 100 and 10,000, but not 0."
+                    "Please input a value between 1 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -215,10 +226,11 @@ function Form2() {
             </button>
             <Typography
               ref={ref}
+              className="wave-motion-chart"
               sx={{ paddingBottom: "2%", alignSelf: "center" }}
             >
-              *NOTE: The area on the left side of the vertical line represents
-              air and the area on the right side represents water.*
+              *NOTE: The lower the input for speed - the slower the rendering
+              may be.*
             </Typography>
           </Box>
         </form>
@@ -257,38 +269,6 @@ function Form2() {
           space. Waves can be seen in different forms, like sound or water
           waves. By studying waves, we learn about their properties and how they
           behave, which is important in areas like communication and optics.
-        </Typography>
-        <Typography
-          variant="h3"
-          sx={{
-            lineHeight: "2em",
-            padding: "2% 10% 0 10%",
-            textShadow: "1px 1px 4px black, 0 0 .3em red",
-            "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 0 5%",
-              fontSize: "2rem",
-            },
-          }}
-        >
-          So what are you seeing in the chart?
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{
-            lineHeight: "2em",
-            padding: "0 10% 2% 10%",
-            textShadow: "1px 1px 4px black, 0 0 .3em blue",
-            "@media screen and (max-width: 600px)": {
-              padding: "1% 5% 10% 5%",
-              fontSize: "1.5rem",
-            },
-          }}
-        >
-          Well, if you clicked the light or sound button. You are essentially
-          rendering a visual representation of that wave. Then showing how fast
-          that wave moves through a medium and how it reflects when changing
-          mediums. Lastly, the x-axis represents time steps and y-axis
-          represents the spacial points.
         </Typography>
       </Box>
     </>

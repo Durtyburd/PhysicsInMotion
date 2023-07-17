@@ -19,7 +19,12 @@ function Form3() {
 
   return (
     <>
-      <div style={{ marginTop: "1%", backgroundColor: "#ededeb" }}>
+      <div
+        style={{
+          margin: "0 5% 15% 5%",
+          backgroundColor: "#ffffff",
+        }}
+      >
         <h2 align="center">Create your own wave function</h2>
         <form
           display="flex"
@@ -126,7 +131,7 @@ function Form3() {
               required
             />
           </Box>
-          <Box align="center">
+          <Box align="center" padding="0 0 5% 0 ">
             <button
               color="primary"
               type="submit"

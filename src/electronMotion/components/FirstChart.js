@@ -116,6 +116,8 @@ function FirstChart({ q1 }) {
           *NOTE: Once you press the button it may take a few seconds for the
           next chart to render.*
         </Typography>
+      </Box>
+      <Box align="center" padding="5% 0 5% 0">
         <button onClick={handleSubmit}>
           Generate Schrödinger Equation Solution
         </button>

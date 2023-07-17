@@ -1,14 +1,15 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Divider } from "@mui/material";
 
 function ElectronMotionGenerator() {
   return (
-    <div style={{ backgroundColor: "white" }}>
-      <Box align="center" padding="7% 0 3% 0" backgroundColor="white">
+    <>
+      <Box margin="15% 5% 0 5%" padding="3% 0 0 0" backgroundColor="white">
         <Typography
           className="heading"
           variant="h3"
           padding="0% 0% 2% 0%"
+          align="center"
           sx={{
             "@media screen and (max-width: 600px)": {
               padding: "18% 3% 0 3%",
@@ -18,24 +19,41 @@ function ElectronMotionGenerator() {
         >
           <strong>
             The Schrödinger <br />
-            Equation
+            Equation <br />
+            (Time Dependent)
           </strong>
         </Typography>
         <Typography
           className="electron-motion"
           variant="h4"
-          padding="0% 0% 2% 0%"
+          padding="3% 5% 0 5%"
           sx={{
             "@media screen and (max-width: 600px)": {
-              padding: "10% 3% 10% 3%",
+              padding: "10% 5% 10% 5%",
               fontSize: "1.5rem",
             },
           }}
         >
-          A 1D visual representation solved by the <br />
-          FDTD (finite-difference time-domain) method.
+          A 1D visual representation solved by the FDTD (finite-difference
+          time-domain) method.
+          <br />
+          <br />
+          This rendering simulates quantum mechanical tunneling of an electron
+          across a square potential barrier. The electron is represented by a 1D
+          Gaussian wavefunction.
+          <Divider sx={{ margin: "3% 0 3% 0" }} />
+          The first chart you will see is the initial wave function.
+          <br />
+          <br />
+          The second chart you will see is the initial wave function after it
+          has been solved with the Schrödinger Equation.
+          <br />
+          <br />
+          The third and final chart you will see is the final wave function.
         </Typography>
-        <Typography sx={{ paddingBottom: "2%", alignSelf: "center" }}>
+        <Divider sx={{ margin: "3% 5% 3% 5%" }} />
+
+        <Typography align="center" sx={{ paddingBottom: "2%" }}>
           *TIP: Enter these inputs. <br />
           Height of potential barrier: 600 <br />
           potential barrier width: .25
@@ -46,7 +64,7 @@ function ElectronMotionGenerator() {
         </Typography>
         <br />
       </Box>
-    </div>
+    </>
   );
 }
 

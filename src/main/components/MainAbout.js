@@ -71,6 +71,25 @@ function MainAbout() {
       </Box>
       {/* Next Section */}
       <Box
+        align="center"
+        padding="3% 0 3% 0"
+        margin="15% 5% 0 5%"
+        backgroundColor="#ffffff"
+      >
+        <Typography
+          className="heading"
+          variant="h3"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "0 3% 0 3%",
+              fontSize: "2.5rem",
+            },
+          }}
+        >
+          <strong>What are three concepts of physics?</strong>
+        </Typography>
+      </Box>
+      <Box
         align="left"
         padding="2% 0 2% 0"
         margin="0 5% 0 5%"
@@ -86,7 +105,7 @@ function MainAbout() {
           sx={{
             lineHeight: "2em",
             padding: "2% 10% 2% 10%",
-            textShadow: "1px 1px 4px black, 0 0 .3em blue",
+            textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
 
             "@media screen and (max-width: 600px)": {
               padding: "10% 5% 10% 5%",

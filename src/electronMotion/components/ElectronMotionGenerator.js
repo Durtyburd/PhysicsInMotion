@@ -55,12 +55,12 @@ function ElectronMotionGenerator() {
 
         <Typography align="center" sx={{ paddingBottom: "2%" }}>
           *TIP: Enter these inputs. <br />
-          Height of potential barrier: 600 <br />
-          potential barrier width: .25
+          Barrier Height: 600 <br />
+          Barrier Width: .25
           <br />
-          kinetic energy: 500
+          Electron Energy: 500
           <br />
-          initial spread: .8*
+          Wavefunction Spread: .8*
         </Typography>
         <br />
       </Box>

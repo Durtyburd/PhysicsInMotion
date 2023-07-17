@@ -3,6 +3,7 @@ import Plotly from "plotly.js-dist-min";
 import { SecondChart } from "./SecondChart.js";
 import { getMaxValue } from "../lib/getMaxValue.js";
 import { Box, Typography } from "@mui/material";
+import { scroller } from "react-scroll";
 
 function FirstChart({ q1 }) {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
@@ -111,16 +112,30 @@ function FirstChart({ q1 }) {
   return (
     <>
       <div id="chart1"></div>
-      <Box align="center" padding="5% 0 5% 0">
+      <Box align="center" padding="5% 0 0">
         <Typography sx={{ paddingBottom: "2%", alignSelf: "center" }}>
           *NOTE: Once you press the button it may take a few seconds for the
           next chart to render.*
         </Typography>
       </Box>
-      <Box align="center" padding="5% 0 5% 0">
-        <button onClick={handleSubmit}>
+      <Box align="center" padding="0 0 5% 0">
+        <button
+          onClick={(e) =>
+            scroller.scrollTo(
+              "electron-motion-second-chart",
+              {
+                smooth: true,
+                offset: -400,
+                duration: 500,
+              },
+              handleSubmit(e)
+            )
+          }
+        >
           Generate Schrödinger Equation Solution
         </button>
+
+        <div className="electron-motion-second-chart"></div>
 
         {isButtonClicked && <SecondChart q1={q1} />}
       </Box>

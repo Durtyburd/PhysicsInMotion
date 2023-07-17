@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TextField, Box, Typography } from "@mui/material";
 import { handleClick } from "../lib/handleClick.js";
 import FirstChart from "./FirstChart.js";
+import { scroller } from "react-scroll";
 
 function Form3() {
   // State for user-inputted wave variables
@@ -133,6 +134,13 @@ function Form3() {
           </Box>
           <Box align="center" padding="0 0 5% 0 ">
             <button
+              onClick={() =>
+                scroller.scrollTo("electron-motion-first-chart", {
+                  smooth: true,
+                  offset: -400,
+                  duration: 500,
+                })
+              }
               color="primary"
               type="submit"
               style={{
@@ -145,6 +153,7 @@ function Form3() {
             </button>
           </Box>
         </form>
+        <div className="electron-motion-first-chart"></div>
         {chartData && <FirstChart q1={chartData} />}
       </div>
     </>

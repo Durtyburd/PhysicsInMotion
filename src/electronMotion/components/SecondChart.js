@@ -2,6 +2,7 @@ import Plotly from "plotly.js-dist-min";
 import React, { useState, useEffect } from "react";
 import { ThirdChart } from "./ThirdChart.js";
 import { getMaxValue } from "../lib/getMaxValue.js";
+import { scroller } from "react-scroll";
 
 ///////////////////////////////////////////////////////////////////////////////////////
 function SecondChart({ q1 }) {
@@ -115,7 +116,23 @@ function SecondChart({ q1 }) {
   return (
     <>
       <div padding="5% 0 5% 0" id="chart2"></div>
-      <button onClick={handleSubmit}>Generate Final Wave Function</button>
+      <button
+        onClick={(e) =>
+          scroller.scrollTo(
+            "electron-motion-third-chart",
+            {
+              smooth: true,
+              offset: -400,
+              duration: 500,
+            },
+            handleSubmit(e)
+          )
+        }
+      >
+        Generate Final Wave Function
+      </button>
+      <div className="electron-motion-third-chart"></div>
+
       {isButtonClicked && <ThirdChart q1={q1} />}
     </>
   );

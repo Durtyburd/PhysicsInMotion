@@ -38,8 +38,7 @@ function WaveMotionGenerator() {
           time-domain) method.
           <br />
           <br />
-          This rendering simulates the probability amplitude of a particle being
-          simulated.
+          This rendering simulates the probability amplitude of a particle.
         </Typography>
         <Divider sx={{ margin: "3% 5% 3% 5%" }} />
         <Typography

@@ -22,7 +22,7 @@ function Form3() {
     <>
       <div
         style={{
-          margin: "0 5% 15% 5%",
+          margin: "0 5% 0 5%",
           backgroundColor: "#ffffff",
         }}
       >
@@ -156,6 +156,37 @@ function Form3() {
         <div className="electron-motion-first-chart"></div>
         {chartData && <FirstChart q1={chartData} />}
       </div>
+      <Box
+        align="left"
+        padding="2% 0 2% 0"
+        margin="0 5% 15% 5%"
+        color="white"
+        sx={{
+          backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
+          position: "relative",
+          "@media screen and (max-width: 600px)": {},
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            lineHeight: "2em",
+            padding: "2% 10% 2% 10%",
+            textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
+            "@media screen and (max-width: 600px)": {
+              padding: "10% 5% 10% 5%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
+          Electron motion refers to the movement of electrons within an atom or
+          in a conducting material, governed by the principles of quantum
+          mechanics. Electrons exhibit wave-particle duality and can occupy
+          specific energy levels or orbitals, leading to behaviors such as
+          wave-like interference and probabilistic location within atomic
+          structures.
+        </Typography>
+      </Box>
     </>
   );
 }

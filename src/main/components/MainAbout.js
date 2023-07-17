@@ -73,7 +73,7 @@ function MainAbout() {
       <Box
         align="center"
         padding="3% 0 3% 0"
-        margin="15% 5% 0 5%"
+        margin="5% 5% 0 5%"
         backgroundColor="#ffffff"
       >
         <Typography

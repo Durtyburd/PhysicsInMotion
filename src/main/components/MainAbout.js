@@ -7,11 +7,13 @@ function MainAbout() {
     <>
       <Box
         align="center"
-        padding="12% 0 10% 0"
+        padding="12% 0 5% 0"
         color="#FFFFFF"
         sx={{
           position: "relative",
-          "@media screen and (max-width: 600px)": {},
+          "@media screen and (max-width: 600px)": {
+            padding: "5% 0 5% 0",
+          },
         }}
       >
         {/* <Box
@@ -33,14 +35,14 @@ function MainAbout() {
         }}
       ></Box> */}
         <Typography
-          variant="h2"
-          padding="0% 0% 5% 0%"
+          variant="h3"
+          padding="0% 0% 3% 0%"
           sx={{
             textShadow: "1px 1px 4px black, 0 0 .3em cyan",
             animation: "fadeIn 5s",
             "@media screen and (max-width: 600px)": {
               padding: "18% 3% 0 3%",
-              fontSize: "2.5rem",
+              fontSize: "1.5rem",
             },
           }}
         >
@@ -51,38 +53,38 @@ function MainAbout() {
           </strong>
         </Typography>
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
+            padding: "0 5% 0 5%",
             animation: "fadeIn 12s",
-            lineHeight: "2em",
             textShadow: "1px 1px 4px black, 0 0 .3em blue",
 
             "@media screen and (max-width: 600px)": {
-              padding: "10% 3% 10% 3%",
-              fontSize: "1.5rem",
+              padding: "5% 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >
-          Explore the fascinating world of particle dynamics with <br />
-          our interactive visualizations. Witness the behavior of <br />
-          particles, waves, and electrons in one-dimensional space <br />
-          through realistic and intuitive renderings.
+          Explore the fascinating world of particle dynamics with our
+          interactive visualizations. Witness the behavior of particles, waves,
+          and electrons in one-dimensional space through realistic and intuitive
+          renderings.
         </Typography>
       </Box>
       {/* Next Section */}
       <Box
         align="center"
         padding="3% 0 3% 0"
-        margin="5% 5% 0 5%"
+        margin="0 5% 0 5%"
         backgroundColor="#ffffff"
       >
         <Typography
           className="heading"
-          variant="h3"
+          variant="h4"
           sx={{
             "@media screen and (max-width: 600px)": {
               padding: "0 3% 0 3%",
-              fontSize: "2.5rem",
+              fontSize: "1.2rem",
             },
           }}
         >
@@ -101,15 +103,15 @@ function MainAbout() {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
             lineHeight: "2em",
             padding: "2% 10% 2% 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
 
             "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 10% 5%",
-              fontSize: "1.5rem",
+              padding: "5% 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >

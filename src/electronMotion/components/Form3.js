@@ -37,7 +37,18 @@ function Form3() {
           backgroundColor: "#ffffff",
         }}
       >
-        <h2 align="center">Create your own wave function</h2>
+        <Typography
+          align="center"
+          variant="h4"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "0 5% 0 5%",
+              fontSize: "1.2rem",
+            },
+          }}
+        >
+          <strong>Create your own wave</strong>
+        </Typography>
         <form
           display="flex"
           //On submit calls the handleClick function to begin wave rendering process
@@ -164,7 +175,16 @@ function Form3() {
             </button>
           </Box>
           <Box align="center">
-            <Typography sx={{ paddingBottom: "2%", alignSelf: "center" }}>
+            <Typography
+              sx={{
+                paddingBottom: "2%",
+                alignSelf: "center",
+                "@media screen and (max-width: 600px)": {
+                  padding: "0 5% 0 5%",
+                  fontSize: ".6rem",
+                },
+              }}
+            >
               *NOTE: Once you press the button it may take a few seconds for the
               next chart to render.*
             </Typography>
@@ -183,7 +203,7 @@ function Form3() {
       <Box
         align="left"
         padding="2% 0 2% 0"
-        margin="0 5% 15% 5%"
+        margin="0 5% 5% 5%"
         color="white"
         sx={{
           backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
@@ -192,14 +212,14 @@ function Form3() {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
             lineHeight: "2em",
-            padding: "2% 10% 2% 10%",
+            padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
             "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 10% 5%",
-              fontSize: "1.5rem",
+              padding: "5% 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >

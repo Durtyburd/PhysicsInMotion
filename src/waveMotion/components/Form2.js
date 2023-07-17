@@ -66,11 +66,19 @@ function Form2() {
         style={{
           backgroundColor: "#ededeb",
           margin: "0 5% 0 5%",
-          paddingBottom: "2%",
         }}
       >
         <Box align="center" padding="0 5% 0 5%">
-          <Typography variant="h4" padding="0% 0% 2% 0%">
+          <Typography
+            variant="h5"
+            padding="0% 0% 2% 0%"
+            sx={{
+              "@media screen and (max-width: 600px)": {
+                padding: "0 5% 0 5%",
+                fontSize: "1rem",
+              },
+            }}
+          >
             Please choose a wave that you would like to see simulated.
           </Typography>
           <button
@@ -97,8 +105,18 @@ function Form2() {
           >
             Sound
           </button>
-          <Divider sx={{ marginTop: "4%" }} />
-          <Typography ref={ref} sx={{ paddingBottom: "2%", marginTop: "5%" }}>
+          <Divider sx={{ marginTop: "1%" }} />
+          <Typography
+            ref={ref}
+            sx={{
+              paddingBottom: "1%",
+              marginTop: "1%",
+              "@media screen and (max-width: 600px)": {
+                padding: "0 5% 0 5%",
+                fontSize: ".6rem",
+              },
+            }}
+          >
             Speed in air: m/s
             <br />
             Speed in water: m/s
@@ -112,11 +130,21 @@ function Form2() {
       <div
         style={{
           margin: "0 5% 0 5%",
-          paddingTop: "1%",
           backgroundColor: "#ededeb",
         }}
       >
-        <h2 align="center">Create your own wave</h2>
+        <Typography
+          align="center"
+          variant="h4"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "0 5% 0 5%",
+              fontSize: "1.2rem",
+            },
+          }}
+        >
+          <strong>Create your own wave</strong>
+        </Typography>
         <form
           display="flex"
           //On submit calls the handleClick function to begin wave rendering process
@@ -227,7 +255,14 @@ function Form2() {
             <Typography
               ref={ref}
               className="wave-motion-chart"
-              sx={{ paddingBottom: "2%", alignSelf: "center" }}
+              sx={{
+                paddingBottom: "2%",
+                alignSelf: "center",
+                "@media screen and (max-width: 600px)": {
+                  padding: "0 5% 0 5%",
+                  fontSize: ".6rem",
+                },
+              }}
             >
               *NOTE: The lower the input for speed - the slower the rendering
               may be.*
@@ -245,7 +280,7 @@ function Form2() {
       <Box
         align="left"
         padding="2% 0 2% 0"
-        margin="0 5% 10% 5%"
+        margin="0 5% 5% 5%"
         color="white"
         sx={{
           backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
@@ -254,14 +289,14 @@ function Form2() {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
             lineHeight: "2em",
-            padding: "2% 10% 2% 10%",
+            padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
             "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 10% 5%",
-              fontSize: "1.5rem",
+              padding: "5% 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >

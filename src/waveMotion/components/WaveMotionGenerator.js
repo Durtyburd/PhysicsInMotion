@@ -4,33 +4,28 @@ import { Box, Typography, Divider } from "@mui/material";
 function WaveMotionGenerator() {
   return (
     <>
-      <Box margin="15% 5% 0 5%" padding="3% 0 3% 0" backgroundColor="#ededeb">
+      <Box margin="6% 5% 0 5%" padding="3% 0 1% 0" backgroundColor="#ededeb">
         <Typography
           className="wave-motion"
-          variant="h3"
+          variant="h4"
           padding="0% 0% 2% 0%"
           align="center"
           sx={{
             "@media screen and (max-width: 600px)": {
-              padding: "3% 3% 0 3%",
-              fontSize: "2.5rem",
+              padding: "0 5% 0 5%",
+              fontSize: "1.2rem",
             },
           }}
         >
-          <strong>
-            Wave Motion
-            <br />
-            Generator
-          </strong>
+          <strong>Wave Motion Generator</strong>
         </Typography>
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
-            lineHeight: "2em",
             padding: "0 10% 0 10%",
             "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 0 5%",
-              fontSize: "1.5rem",
+              padding: "5% 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >
@@ -42,13 +37,12 @@ function WaveMotionGenerator() {
         </Typography>
         <Divider sx={{ margin: "3% 5% 3% 5%" }} />
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
-            lineHeight: "2em",
             padding: "0 10% 2% 10%",
             "@media screen and (max-width: 600px)": {
-              padding: "1% 5% 10% 5%",
-              fontSize: "1.5rem",
+              padding: "0 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >

@@ -4,16 +4,15 @@ import { Box, Typography, Divider } from "@mui/material";
 function ElectronMotionGenerator() {
   return (
     <>
-      <Box margin="15% 5% 0 5%" padding="3% 0 0 0" backgroundColor="white">
+      <Box margin="5% 5% 0 5%" padding="3% 0 0 0" backgroundColor="white">
         <Typography
           className="heading"
-          variant="h3"
-          padding="0% 0% 2% 0%"
+          variant="h4"
           align="center"
           sx={{
             "@media screen and (max-width: 600px)": {
-              padding: "18% 3% 0 3%",
-              fontSize: "2.5rem",
+              padding: "5% 3% 0 3%",
+              fontSize: "1.2rem",
             },
           }}
         >
@@ -25,12 +24,12 @@ function ElectronMotionGenerator() {
         </Typography>
         <Typography
           className="electron-motion"
-          variant="h4"
+          variant="h5"
           padding="3% 5% 0 5%"
           sx={{
             "@media screen and (max-width: 600px)": {
-              padding: "10% 5% 10% 5%",
-              fontSize: "1.5rem",
+              padding: "5% 5% 5% 5%",
+              fontSize: "1rem",
             },
           }}
         >
@@ -42,18 +41,28 @@ function ElectronMotionGenerator() {
           across a square potential barrier. The electron is represented by a 1D
           Gaussian wavefunction.
           <Divider sx={{ margin: "3% 0 3% 0" }} />
-          The first chart you will see is the initial wave function.
-          <br />
-          <br />
-          The second chart you will see is the initial wave function after it
-          has been solved with the Schrödinger Equation.
-          <br />
-          <br />
-          The third and final chart you will see is the final wave function.
+          <ul>
+            <li>The first chart you will see is the initial wave function.</li>
+            <li>
+              The second chart you will see is the initial wave function after
+              it has been solved with the Schrödinger Equation.
+            </li>
+            <li>
+              The third and final chart you will see is the final wave function.
+            </li>
+          </ul>
         </Typography>
         <Divider sx={{ margin: "3% 5% 3% 5%" }} />
 
-        <Typography align="center" sx={{ paddingBottom: "2%" }}>
+        <Typography
+          align="center"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              padding: "0 5% 0 5%",
+              fontSize: ".6rem",
+            },
+          }}
+        >
           *TIP: Enter these inputs. <br />
           Barrier Height: 600 <br />
           Barrier Width: .25

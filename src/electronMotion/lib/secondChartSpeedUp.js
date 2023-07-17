@@ -9,7 +9,8 @@ function secondChartSpeedUp(q1) {
 
   for (let nn = 0; nn < q1.tt; nn++) {
     q1.fdtdUpdate();
-    if (nn % 50 === 0) {
+    if (nn % 350 === 0) {
+      //change by increments of 50 to speed up (50 was initial value)
       // Wave // they should only iterate 219 times
       xArr1.push(q1.lx.map((value) => value / q1.angstromStar));
       yArr1.push(q1.psimag.map((value) => value / getMaxValue(q1.psimag)));

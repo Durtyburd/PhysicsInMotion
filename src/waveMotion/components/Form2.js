@@ -70,8 +70,7 @@ function Form2() {
       >
         <Box align="center" padding="0 5% 0 5%">
           <Typography
-            variant="h5"
-            padding="0% 0% 2% 0%"
+            variant="h6"
             sx={{
               "@media screen and (max-width: 600px)": {
                 padding: "0 5% 0 5%",
@@ -135,7 +134,7 @@ function Form2() {
       >
         <Typography
           align="center"
-          variant="h4"
+          variant="h5"
           sx={{
             "@media screen and (max-width: 600px)": {
               padding: "0 5% 0 5%",
@@ -287,7 +286,7 @@ function Form2() {
       <Box
         align="left"
         padding="2% 0 2% 0"
-        margin="0 5% 5% 5%"
+        margin="0 5% 3% 5%"
         color="white"
         sx={{
           backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
@@ -296,9 +295,8 @@ function Form2() {
         }}
       >
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
-            lineHeight: "2em",
             padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
             "@media screen and (max-width: 600px)": {

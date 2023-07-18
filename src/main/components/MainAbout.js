@@ -7,7 +7,7 @@ function MainAbout() {
     <>
       <Box
         align="center"
-        padding="12% 0 5% 0"
+        padding="12% 0 3% 0"
         color="#FFFFFF"
         sx={{
           position: "relative",
@@ -35,7 +35,7 @@ function MainAbout() {
         }}
       ></Box> */}
         <Typography
-          variant="h3"
+          variant="h4"
           padding="0% 0% 3% 0%"
           sx={{
             textShadow: "1px 1px 4px black, 0 0 .3em cyan",
@@ -53,7 +53,7 @@ function MainAbout() {
           </strong>
         </Typography>
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
             padding: "0 5% 0 5%",
             animation: "fadeIn 12s",
@@ -74,13 +74,13 @@ function MainAbout() {
       {/* Next Section */}
       <Box
         align="center"
-        padding="3% 0 3% 0"
+        padding="1% 0 1% 0"
         margin="0 5% 0 5%"
         backgroundColor="#ffffff"
       >
         <Typography
           className="heading"
-          variant="h4"
+          variant="h5"
           sx={{
             "@media screen and (max-width: 600px)": {
               padding: "0 3% 0 3%",
@@ -103,10 +103,9 @@ function MainAbout() {
         }}
       >
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
-            lineHeight: "2em",
-            padding: "2% 10% 2% 10%",
+            padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
 
             "@media screen and (max-width: 600px)": {

@@ -26,7 +26,6 @@ function WaveMotionFirstChart({ framesData, ibdData, imaxData }) {
 
     // Chart layout
     const layout = {
-      title: "Wave rendered...",
       displayModeBar: false, // Remove the mode bar
       font: { size: 18 },
       xaxis: {

@@ -6,13 +6,13 @@ function ParticleMotionGenerator() {
     <>
       <Box
         align="center"
-        padding="3% 0 3% 0"
-        margin="7% 5% 0 5%"
+        padding="1% 0 1% 0"
+        margin="3% 5% 0 5%"
         backgroundColor="#ffffff"
       >
         <Typography
           className="particle-motion"
-          variant="h4"
+          variant="h5"
           sx={{
             "@media screen and (max-width: 600px)": {
               padding: "0 5% 0 5%",
@@ -26,7 +26,7 @@ function ParticleMotionGenerator() {
       <Box
         align="left"
         padding="2% 0 2% 0"
-        margin="0 5% 5% 5%"
+        margin="0 5% 2% 5%"
         color="white"
         sx={{
           backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
@@ -35,9 +35,8 @@ function ParticleMotionGenerator() {
         }}
       >
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
-            lineHeight: "2em",
             padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
             "@media screen and (max-width: 600px)": {
@@ -52,10 +51,9 @@ function ParticleMotionGenerator() {
           how things move and learn more about the world around us.
         </Typography>
         <Typography
-          variant="h4"
+          variant="h6"
           sx={{
-            lineHeight: "2em",
-            padding: "2% 10% 0 10%",
+            padding: "1% 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em red",
             "@media screen and (max-width: 600px)": {
               padding: "0 5% 0 5%",
@@ -66,10 +64,9 @@ function ParticleMotionGenerator() {
           Examples Include:
         </Typography>
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
-            lineHeight: "2em",
-            padding: "0 10% 2% 10%",
+            padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em blue",
             "@media screen and (max-width: 600px)": {
               padding: "0 5% 5% 5%",

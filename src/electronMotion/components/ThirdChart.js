@@ -66,7 +66,7 @@ function ThirdChart({ q1 }) {
 
     // Chart layout
     const layout = {
-      title: "Final wavefunctions (normalized)",
+      title: "Final wavefunctions",
       displayModeBar: false, // Remove the mode bar
       font: { size: 18 },
       xaxis: {

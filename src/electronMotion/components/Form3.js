@@ -39,7 +39,7 @@ function Form3() {
       >
         <Typography
           align="center"
-          variant="h4"
+          variant="h5"
           sx={{
             "@media screen and (max-width: 600px)": {
               padding: "0 5% 0 5%",
@@ -218,9 +218,8 @@ function Form3() {
         }}
       >
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
-            lineHeight: "2em",
             padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em #39FF14",
             "@media screen and (max-width: 600px)": {

@@ -4,10 +4,10 @@ import { Box, Typography, Divider } from "@mui/material";
 function WaveMotionGenerator() {
   return (
     <>
-      <Box margin="6% 5% 0 5%" padding="3% 0 1% 0" backgroundColor="#ededeb">
+      <Box margin="3% 5% 0 5%" padding="1% 0 1% 0" backgroundColor="#ededeb">
         <Typography
           className="wave-motion"
-          variant="h4"
+          variant="h5"
           padding="0% 0% 2% 0%"
           align="center"
           sx={{
@@ -20,7 +20,7 @@ function WaveMotionGenerator() {
           <strong>Wave Motion Generator</strong>
         </Typography>
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
             padding: "0 10% 0 10%",
             "@media screen and (max-width: 600px)": {
@@ -32,16 +32,17 @@ function WaveMotionGenerator() {
           A 1D visual representation solved by the FDTD (finite-difference
           time-domain) method.
           <br />
-          <br />
-          This rendering simulates the probability amplitude of a particle.
+          <em>
+            This rendering simulates the probability amplitude of a particle.
+          </em>
         </Typography>
-        <Divider sx={{ margin: "3% 5% 3% 5%" }} />
+        <Divider sx={{ margin: "1% 5% 1% 5%" }} />
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
             padding: "0 10% 2% 10%",
             "@media screen and (max-width: 600px)": {
-              padding: "0 5% 5% 5%",
+              padding: "0 5% 0 5%",
               fontSize: "1rem",
             },
           }}
@@ -63,7 +64,7 @@ function WaveMotionGenerator() {
           side is water). Lastly, the x-axis represents time steps and y-axis
           represents the spacial points.
         </Typography>
-        <Divider sx={{ margin: "2% 5% 0 5%" }} />
+        <Divider sx={{ margin: "0 5% 0 5%" }} />
       </Box>
     </>
   );

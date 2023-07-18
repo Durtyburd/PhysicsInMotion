@@ -76,7 +76,7 @@ function FirstChart({ q1, finalFrames, xArr2, yArr2 }) {
 
     // Chart layout
     const layout = {
-      title: "Initial wavefunctions (normalized)",
+      title: "Initial wavefunction",
       displayModeBar: false, // Remove the mode bar
       font: { size: 18 },
       xaxis: {

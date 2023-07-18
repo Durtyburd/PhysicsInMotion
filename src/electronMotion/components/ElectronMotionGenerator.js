@@ -4,10 +4,10 @@ import { Box, Typography, Divider } from "@mui/material";
 function ElectronMotionGenerator() {
   return (
     <>
-      <Box margin="5% 5% 0 5%" padding="3% 0 0 0" backgroundColor="white">
+      <Box margin="0 5% 0 5%" padding="1% 0 0 0" backgroundColor="white">
         <Typography
           className="heading"
-          variant="h4"
+          variant="h5"
           align="center"
           sx={{
             "@media screen and (max-width: 600px)": {
@@ -17,14 +17,13 @@ function ElectronMotionGenerator() {
           }}
         >
           <strong>
-            The Schrödinger <br />
-            Equation <br />
+            The Schrödinger Equation <br />
             (Time Dependent)
           </strong>
         </Typography>
         <Typography
           className="electron-motion"
-          variant="h5"
+          variant="h6"
           padding="3% 5% 0 5%"
           sx={{
             "@media screen and (max-width: 600px)": {
@@ -40,7 +39,7 @@ function ElectronMotionGenerator() {
           This rendering simulates quantum mechanical tunneling of an electron
           across a square potential barrier. The electron is represented by a 1D
           Gaussian wavefunction.
-          <Divider sx={{ margin: "3% 0 3% 0" }} />
+          <Divider sx={{ margin: "1% 0 1% 0" }} />
           <ul>
             <li>The first chart you will see is the initial wave function.</li>
             <li>
@@ -52,7 +51,7 @@ function ElectronMotionGenerator() {
             </li>
           </ul>
         </Typography>
-        <Divider sx={{ margin: "3% 5% 3% 5%" }} />
+        <Divider sx={{ margin: "1% 5% 1% 5%" }} />
 
         <Typography
           align="center"

@@ -155,6 +155,10 @@ function Form2() {
             sx={{
               display: "flex",
               justifyContent: "center",
+
+              "@media screen and (max-width: 600px)": {
+                padding: "0 10% 0 10%",
+              },
             }}
           >
             <TextField
@@ -199,6 +203,9 @@ function Form2() {
             sx={{
               display: "flex",
               justifyContent: "center",
+              "@media screen and (max-width: 600px)": {
+                padding: "0 10% 0 10%",
+              },
             }}
           >
             <TextField

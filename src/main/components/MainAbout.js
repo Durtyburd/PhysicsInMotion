@@ -41,7 +41,7 @@ function MainAbout() {
             textShadow: "1px 1px 4px black, 0 0 .3em cyan",
             animation: "fadeIn 5s",
             "@media screen and (max-width: 600px)": {
-              padding: "18% 3% 0 3%",
+              padding: "18% 10% 0 10%",
               fontSize: "1.5rem",
             },
           }}
@@ -60,7 +60,7 @@ function MainAbout() {
             textShadow: "1px 1px 4px black, 0 0 .3em blue",
 
             "@media screen and (max-width: 600px)": {
-              padding: "5% 5% 5% 5%",
+              padding: "5% 10% 5% 10%",
               fontSize: "1rem",
             },
           }}

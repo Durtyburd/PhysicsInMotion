@@ -8,6 +8,7 @@ import "../src/stylesheets/app.css";
 import { MainAbout } from "./main/components/MainAbout.js";
 import { ParticleMotionGenerator } from "./particleMotion/components/ParticleMotionGenerator.js";
 import { Particle } from "./main/components/Particle.js";
+import { AirFriction } from "./particleMotion/components/AirFriction.js";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <MainAbout />
         {/*  */}
         <ParticleMotionGenerator />
+        <AirFriction />
         {/*  */}
         <WaveMotionGenerator />
         <Form2 />

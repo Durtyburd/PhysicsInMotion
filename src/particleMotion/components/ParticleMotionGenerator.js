@@ -26,7 +26,7 @@ function ParticleMotionGenerator() {
       <Box
         align="left"
         padding="2% 0 2% 0"
-        margin="0 5% 2% 5%"
+        margin="0 5% 0 5%"
         color="white"
         sx={{
           backgroundColor: "rgba(225, 225, 225, .2)", // Adjust the opacity value (0.5) as desired
@@ -69,7 +69,7 @@ function ParticleMotionGenerator() {
             padding: "0 10% 0 10%",
             textShadow: "1px 1px 4px black, 0 0 .3em blue",
             "@media screen and (max-width: 600px)": {
-              padding: "0 5% 5% 5%",
+              padding: "0 5% 0 5%",
               fontSize: "1rem",
             },
           }}

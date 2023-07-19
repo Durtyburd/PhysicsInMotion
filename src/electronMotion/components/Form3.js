@@ -72,13 +72,13 @@ function Form3() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value > -1 && e.target.value <= 10e13) ||
+                  (e.target.value > -1 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStateV0(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 1 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 1 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -93,13 +93,13 @@ function Form3() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value > -1 && e.target.value <= 10e13) ||
+                  (e.target.value > -1 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStatebw(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 0 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 0 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }
@@ -125,13 +125,13 @@ function Form3() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value >= -1 && e.target.value <= 10e13) ||
+                  (e.target.value >= -1 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStateke(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 0 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 0 and 10,000, but not 0."
                   );
                   e.target.value = 0.1;
                 }
@@ -146,13 +146,13 @@ function Form3() {
               sx={{ margin: "1% 1% 1% 1%" }}
               onChange={(e) => {
                 if (
-                  (e.target.value > -1 && e.target.value <= 10e13) ||
+                  (e.target.value > -1 && e.target.value <= 10000) ||
                   e.target.value === "."
                 ) {
                   setStatesig(e.target.value);
                 } else {
                   alert(
-                    "Please input a value between 0 and 100,000,000,000,000, but not 0."
+                    "Please input a value between 0 and 10,000, but not 0."
                   );
                   e.target.value = 1;
                 }

@@ -26,20 +26,33 @@ function AirFriction() {
     setaddedCircles([]); // Clear the addedCircles state
   }
 
-  // Function to add circles to the world
+  const circleOptions = {
+    isStatic: false,
+    // frictionAir: 0.001,
+    restitution: 1,
+    render: {
+      fillStyle: "#BF40BF",
+    },
+  };
+
+  const rectangleOptions = {
+    isStatic: true,
+  };
+
+  //Function to add circles to world
   const addcirclesToWorld = () => {
     const circles = [
-      Bodies.circle(cw / 2 - 200, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 - 150, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 - 150, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 - 100, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 - 50, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 + 50, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 + 100, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 + 150, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 + 150, 10, 25, { frictionAir: 0.001 }),
-      Bodies.circle(cw / 2 + 200, 10, 25, { frictionAir: 0.001 }),
+      Bodies.circle(cw / 2 - 200, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 - 150, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 - 150, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 - 100, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 - 50, 10, 25, circleOptions),
+      Bodies.circle(cw / 2, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 + 50, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 + 100, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 + 150, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 + 150, 10, 25, circleOptions),
+      Bodies.circle(cw / 2 + 200, 10, 25, circleOptions),
     ];
     setaddedCircles(circles); // Store the added circles in state
     World.add(engine.current.world, circles);
@@ -60,10 +73,10 @@ function AirFriction() {
       });
 
       World.add(engine.current.world, [
-        Bodies.rectangle(cw / 2, -10, cw, 20, { isStatic: true }),
-        Bodies.rectangle(-10, ch / 2, 20, ch, { isStatic: true }),
-        Bodies.rectangle(cw / 2, ch + 10, cw, 20, { isStatic: true }),
-        Bodies.rectangle(cw + 10, ch / 2, 20, ch, { isStatic: true }),
+        Bodies.rectangle(cw / 2, -10, cw, 20, rectangleOptions),
+        Bodies.rectangle(-10, ch / 2, 20, ch, rectangleOptions),
+        Bodies.rectangle(cw / 2, ch + 10, cw, 20, rectangleOptions),
+        Bodies.rectangle(cw + 10, ch / 2, 20, ch, rectangleOptions),
       ]);
 
       Engine.run(engine.current);

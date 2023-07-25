@@ -35,6 +35,20 @@ function MainAbout() {
         }}
       ></Box> */}
         <Typography
+          variant="h6"
+          padding="0% 0% 3% 0%"
+          sx={{
+            textShadow: "1px 1px 4px black, 0 0 1em yellow",
+            animation: "fadeIn 5s",
+            "@media screen and (max-width: 600px)": {
+              padding: "18% 10% 0 10%",
+              fontSize: "1.5rem",
+            },
+          }}
+        >
+          <strong>Beta Version</strong>
+        </Typography>
+        <Typography
           variant="h4"
           padding="0% 0% 3% 0%"
           sx={{

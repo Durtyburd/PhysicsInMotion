@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import Plotly from "plotly.js-dist-min";
 import { SecondChart } from "./SecondChart.js";
 import { getMaxValue } from "../lib/getMaxValue.js";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { scroller } from "react-scroll";
 
-function FirstChart({ q1, finalFrames, xArr2, yArr2 }) {
+function FirstChart({ q1 }) {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const handleSubmit = (e) => {
@@ -107,7 +107,7 @@ function FirstChart({ q1, finalFrames, xArr2, yArr2 }) {
 
     // Renders next graph immediately
     // secondChart(q1);
-  }, [q1, finalFrames, xArr2, yArr2]);
+  }, [q1]);
 
   return (
     <>
@@ -132,14 +132,7 @@ function FirstChart({ q1, finalFrames, xArr2, yArr2 }) {
 
         <div className="electron-motion-second-chart"></div>
 
-        {isButtonClicked && (
-          <SecondChart
-            q1={q1}
-            finalFrames={finalFrames}
-            xArr2={xArr2}
-            yArr2={yArr2}
-          />
-        )}
+        {isButtonClicked && <SecondChart q1={q1} />}
       </Box>
     </>
   );

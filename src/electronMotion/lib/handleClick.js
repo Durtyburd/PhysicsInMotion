@@ -1,4 +1,3 @@
-import { secondChartSpeedUp } from "./secondChartSpeedUp.js";
 import { startSim } from "./startSim.js";
 
 function handleClick(stateV0, statebw, statesig, stateke) {
@@ -11,7 +10,6 @@ function handleClick(stateV0, statebw, statesig, stateke) {
     // gridSize,
     // timeStep,
   } = startSim(stateV0, statebw, statesig, stateke);
-  const { xArr2, yArr2, finalFrames } = secondChartSpeedUp(q1);
   // console.log("");
   // console.log("Potential barrier =", potentialBarrier, "eV");
   // console.log("Potential barrier width =", potentialBarrierWidth, "A");
@@ -23,7 +21,7 @@ function handleClick(stateV0, statebw, statesig, stateke) {
   // console.log("");
   // console.log("Grid size =", gridSize, "A");
   // console.log("Time step =", timeStep, "fs");
-  return { q1, xArr2, yArr2, finalFrames };
+  return { q1 };
 }
 
 export { handleClick };

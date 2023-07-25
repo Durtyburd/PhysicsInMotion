@@ -11,22 +11,11 @@ function Form3() {
   const [statesig, setStatesig] = useState(0);
   const [stateke, setStateke] = useState(0);
   const [chartData, setChartData] = useState(null);
-  const [finalFramesData, setFinalFramesData] = useState(null);
-  const [xArr2Data, setXArr2Data] = useState(null);
-  const [yArr2Data, setYArr2Data] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { q1, xArr2, yArr2, finalFrames } = handleClick(
-      stateV0,
-      statebw,
-      statesig,
-      stateke
-    );
+    const { q1 } = handleClick(stateV0, statebw, statesig, stateke);
     setChartData(q1);
-    setFinalFramesData(finalFrames);
-    setXArr2Data(xArr2);
-    setYArr2Data(yArr2);
   };
 
   return (
@@ -197,14 +186,7 @@ function Form3() {
           </Box>
         </form>
         <div className="electron-motion-first-chart"></div>
-        {chartData && (
-          <FirstChart
-            q1={chartData}
-            finalFrames={finalFramesData}
-            xArr2={xArr2Data}
-            yArr2={yArr2Data}
-          />
-        )}
+        {chartData && <FirstChart q1={chartData} />}
       </div>
       <Box
         align="left"

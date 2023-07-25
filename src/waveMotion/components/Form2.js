@@ -54,8 +54,6 @@ function Form2() {
   function scroll() {
     if (stateC === 0 || stateCW === 0 || stateAmp === 0 || statef0 === 0) {
       alert("Please input values.");
-    } else if (stateC < 100 || stateCW < 100 || statef0 < 100) {
-      alert("Values other than source amplitute must be greater than 100.");
     } else {
       ref.current?.scrollIntoView({ behavior: "smooth" });
     }

@@ -20,7 +20,7 @@ function ParticleMotionGenerator() {
             },
           }}
         >
-          <strong>What is Particle Motion?</strong>
+          <strong>Motion of a Classical Object</strong>
         </Typography>
       </Box>
       <Box

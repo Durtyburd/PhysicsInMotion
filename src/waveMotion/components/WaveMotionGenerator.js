@@ -17,7 +17,7 @@ function WaveMotionGenerator() {
             },
           }}
         >
-          <strong>Wave Motion Generator</strong>
+          <strong>A 1D Representation of a Wave Packet</strong>
         </Typography>
         <Typography
           variant="h6"
@@ -32,9 +32,6 @@ function WaveMotionGenerator() {
           A 1D visual representation solved by the FDTD (finite-difference
           time-domain) method.
           <br />
-          <em>
-            This rendering simulates the probability amplitude of a particle.
-          </em>
         </Typography>
         <Divider sx={{ margin: "1% 5% 1% 5%" }} />
         <Typography

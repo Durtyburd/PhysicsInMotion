@@ -102,7 +102,7 @@ function MainAbout() {
             },
           }}
         >
-          <strong>What are three concepts of physics?</strong>
+          <strong>Particle, Wave and Electron Motion</strong>
         </Typography>
       </Box>
       <Box
